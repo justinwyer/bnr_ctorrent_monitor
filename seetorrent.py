@@ -3,7 +3,7 @@
 from subprocess import Popen, PIPE
 from status_line import StatusLine
 
-process = Popen(['ctorrent', 'NZBDrop.dmg.torrent'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
+process = Popen(['/usr/local/bin/ctorrent', 'NZBDrop.dmg.torrent'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
 
 while True:
     line = process.stdout.readline()
